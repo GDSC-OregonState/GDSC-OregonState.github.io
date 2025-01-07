@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Taz Larson",
+    "position": "President",
+    "image": "/public/officer_headshots/Taz_Larson_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/taz-larson-a32955265/",
+    "email": "larsotaz@oregonstate.edu",
+    "description": ""
+  },
+  {
+    "name": "Will Teyema",
+    "position": "Vice President",
+    "image": "/public/officer_headshots/Will_Teyema_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/will-teyema/",
+    "email": "teyemaw@oregonstate.edu",
+    "description": "Computer Science sophomore with a focus on AI and am always coding, climbing, or skiing"
+  },
+  {
+    "name": "Kai Black",
+    "position": "Treasurer",
+    "image": "/public/officer_headshots/Kai_Black_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/kai-black/",
+    "email": "blackkai@oregonstate.edu",
+    "description": "Computer Science senior focused on backend, distributed systems, and being bad at the guitar"
+  },
+  {
+    "name": "Jack Kammerer",
+    "position": "Technical Officer",
+    "image": "/public/officer_headshots/Jack_Kammerer_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/jack-kammerer/",
+    "email": "kammerej@oregonstate.edu",
+    "description": ""
+  },
+  {
+    "name": "Chris Ho",
+    "position": "Technical Officer",
+    "image": "/public/officer_headshots/Chris_Ho_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/chris-ho-/",
+    "email": "hochris@oregonstate.edu",
+    "description": ""
+  },
+  {
+    "name": "Tan Singsukhum",
+    "position": "Public Relations",
+    "image": "/public/officer_headshots/Tan_Singsukhum_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/thanaphon-singsukhum-98b074271/",
+    "email": "singsukt@oregonstate.edu",
+    "description": "Computer Science junior focused on BIS with a Cybersecurity Management Minor"
+  },
+  {
+    "name": "Karen Chan",
+    "position": "Public Relations - Online",
+    "image": "/public/officer_headshots/Karen_Chan_Headshot_Photo.jpg",
+    "linkedin": "https://www.linkedin.com/in/karen-c-4133a92ab/",
+    "email": "chankare@oregonstate.edu",
+    "description": ""
+  }
+]

@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import officers from '../data/officers.json';
+---
+
+<Layout title="Officers">
+  <div class="bg-gradient-to-br from-[--google-blue] to-blue-700 text-white py-12">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center">Meet Our Team</h1>
+    </div>
+  </div>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {officers.map((officer) => (
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <Image 
+              src={officer.image} 
+              alt={officer.name} 
+              width={300} 
+              height={300} 
+              class="w-full h-auto object-cover rounded-full shadow-md border-2 border-gray-300"
+            />
+            <div class="p-6">
+              <h2 class="text-xl font-bold mb-1">{officer.name}</h2>
+              <p class="text-[--google-blue] font-medium mb-2">{officer.position}</p>
+              <p class="text-gray-600 mb-4 text-sm">{officer.description}</p>
+              <a 
+              href={officer.linkedin} 
+              class="text-[--google-blue] hover:text-blue-700 text-sm flex items-center"
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              LinkedIn
+              </a>
+              <a 
+                href={`mailto:${officer.email}`} 
+                class="text-[--google-blue] hover:text-blue-700 text-sm flex items-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                {officer.email}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <div class="bg-white rounded-lg shadow-md p-8">
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[--google-blue] focus:border-[--google-blue]"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[--google-blue] focus:border-[--google-blue]"
+              required
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[--google-blue] focus:border-[--google-blue]"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[--google-blue] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</Layout>
