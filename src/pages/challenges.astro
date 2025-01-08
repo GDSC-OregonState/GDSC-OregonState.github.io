@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ChallengesComponent from '../components/ChallengesComponent';
+---
+
+<Layout title="Challenges">
+  <div class="bg-gradient-to-br from-[--google-blue] to-blue-700 text-white py-12">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center">GDG Challenges</h1>
+    </div>
+  </div>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <ChallengesComponent client:load />
+    </div>
+  </section>
+</Layout>
