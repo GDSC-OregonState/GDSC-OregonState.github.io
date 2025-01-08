@@ -1,0 +1,38 @@
+{
+  "leaderboard": [
+    { "name": "Kai Black", "points": 1000000 },
+    { "name": "Taz Larson", "points": 1050 },
+    { "name": "Will Teyema", "points": 950 },
+    { "name": "Jack Kammerer", "points": 900 },
+    { "name": "Chris Ho", "points": 850 },
+    { "name": "Karen Chan", "points": 500 },
+    { "name": "Tan Singsukhum", "points": 1 }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "challenges": [
+        {
+          "name": "Hello World Angular",
+          "points": 100,
+          "description": "Create a basic Angular frontend that displays 'Hello World' and your name on the screen."
+        },
+        {
+          "name": "Firebase Auth Setup",
+          "points": 200,
+          "description": "Set up a Firebase backend with FireAuth and populate it with 3 accounts. Create a frontend of your choice that connects to this backend and allows for sign-in."
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "challenges": [
+        {
+          "name": "API Integration",
+          "points": 180,
+          "description": "Create an application that integrates with a public API and displays data in an organized manner."
+        }
+      ]
+    }
+  ]
+}
