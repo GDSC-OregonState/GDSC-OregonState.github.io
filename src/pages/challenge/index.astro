@@ -1,0 +1,10 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getPosts } from "@/lib/fetcher";
+
+const posts = await getPosts();
+---
+
+<Layout title="Blog">
+  <section class="container py-10"></section>
+</Layout>
