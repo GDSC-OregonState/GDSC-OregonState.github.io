@@ -2,19 +2,24 @@
 import "../styles/globals.css";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import ParticlesBackground from "../components/ParticlesBackground";
+// import ParticlesBackground from "@/components/ParticlesBackground.tsx";
+import { Button } from "../components/ui/button.tsx";
 ---
 
 <Layout title="Home">
-  <div
-    class="bg-gradient-to-br from-[--google-blue] to-blue-700 text-white py-20"
-  >
+  <section class="bg-gradient-to-br py-20">
     <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-5xl font-bold mb-6">
-          Welcome to Google Developer Group on Campus
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-7xl font-bold mb-6 text-neutral-700">
+          Welcome to <a class="text-gred">Google </a>
+          <a class="text-gblue">Developer</a>
+          <a class="text-ggreen">Group</a> on <a class="text-gyellow">Campus</a>
+          @ Oregon State
+          <!-- <a class="text-black">Oregon</a>
+          <a class="text-borange">State</a> -->
         </h1>
-        <p class="text-xl mb-8 text-blue-100">
+
+        <p class="text-xl mb-8 text-neutral-700">
           Oregon State University's hub for tech enthusiasts and future
           innovators
         </p>
@@ -35,7 +40,7 @@ import ParticlesBackground from "../components/ParticlesBackground";
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
