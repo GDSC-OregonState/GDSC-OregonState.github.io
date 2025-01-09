@@ -42,17 +42,22 @@ import { Button } from "../components/ui/button.tsx";
     </div>
   </section>
 
-  <section class="py-16 bg-white h-screen rounded-md">
-    <div class="container mx-auto px-4">
-      <h2 class="text-7xl font-bold text-center mb-16">What We Do</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
-        <div class="p-8 text-center">
+  <section
+    class="py-16 bg-white h-screen flex flex-col items-center justify-center rounded-md"
+  >
+    <div class="container mx-auto px-4 flex-grow flex flex-col justify-center">
+      <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-16">
+        What We Do
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 flex-grow">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center justify-center text-center p-4">
           <div
-            class="w-20 h-20 bg-[--google-blue] rounded-full flex items-center justify-center mx-auto mb-6"
+            class="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-[--google-blue] rounded-full mb-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-10 h-10 text-white"
+              class="w-10 h-10 md:w-12 md:h-12 text-white"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -65,19 +70,20 @@ import { Button } from "../components/ui/button.tsx";
               ></path>
             </svg>
           </div>
-          <h3 class="text-2xl font-bold mb-3">Workshops</h3>
-          <p class="text-gray-600 text-lg">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Workshops</h3>
+          <p class="text-gray-600 text-sm md:text-base">
             Learn from industry experts and peers through hands-on coding
             sessions
           </p>
         </div>
-        <div class="p-8 text-center">
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center justify-center text-center p-4">
           <div
-            class="w-20 h-20 bg-[--google-red] rounded-full flex items-center justify-center mx-auto mb-6"
+            class="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-[--google-red] rounded-full mb-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-10 h-10 text-white"
+              class="w-10 h-10 md:w-12 md:h-12 text-white"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -89,19 +95,20 @@ import { Button } from "../components/ui/button.tsx";
               ></polygon>
             </svg>
           </div>
-          <h3 class="text-2xl font-bold mb-3">Hackathons</h3>
-          <p class="text-gray-600 text-lg">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Hackathons</h3>
+          <p class="text-gray-600 text-sm md:text-base">
             Participate in exciting coding competitions and build amazing
             projects
           </p>
         </div>
-        <div class="p-8 text-center">
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center justify-center text-center p-4">
           <div
-            class="w-20 h-20 bg-[--google-green] rounded-full flex items-center justify-center mx-auto mb-6"
+            class="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-[--google-green] rounded-full mb-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-10 h-10 text-white"
+              class="w-10 h-10 md:w-12 md:h-12 text-white"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -115,21 +122,20 @@ import { Button } from "../components/ui/button.tsx";
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </div>
-          <h3 class="text-2xl font-bold mb-3">Networking</h3>
-          <p class="text-gray-600 text-lg">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Networking</h3>
+          <p class="text-gray-600 text-sm md:text-base">
             Connect with fellow developers and build your professional network
           </p>
         </div>
-        <!-- New Career Development Section -->
+        <!-- Card 4 -->
         <div></div>
-        <!-- New Building Projects Section -->
-        <div class="p-8 text-center">
+        <div class="flex flex-col items-center justify-center text-center p-4">
           <div
-            class="w-20 h-20 bg-[#2ecc71] rounded-full flex items-center justify-center mx-auto mb-6"
+            class="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-[#2ecc71] rounded-full mb-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-10 h-10 text-white"
+              class="w-10 h-10 md:w-12 md:h-12 text-white"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -141,8 +147,8 @@ import { Button } from "../components/ui/button.tsx";
               <path d="M12 15V3"></path>
             </svg>
           </div>
-          <h3 class="text-2xl font-bold mb-3">Build Projects</h3>
-          <p class="text-gray-600 text-lg">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">Build Projects</h3>
+          <p class="text-gray-600 text-sm md:text-base">
             Work on real-world projects to hone your skills and create a strong
             portfolio
           </p>

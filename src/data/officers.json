@@ -2,7 +2,7 @@
   {
     "name": "Taz Larson",
     "position": "President",
-    "image": "/public/officer_headshots/Taz_Larson_Headshot_Photo.jpg",
+    "image": "/officer_headshots/Taz_Larson_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/taz-larson-a32955265/",
     "email": "larsotaz@oregonstate.edu",
     "description": ""
@@ -10,7 +10,7 @@
   {
     "name": "Will Teyema",
     "position": "Vice President",
-    "image": "/public/officer_headshots/Will_Teyema_Headshot_Photo.jpg",
+    "image": "/officer_headshots/Will_Teyema_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/will-teyema/",
     "email": "teyemaw@oregonstate.edu",
     "description": "Computer Science sophomore with a focus on AI and am always coding, climbing, or skiing"
@@ -18,7 +18,7 @@
   {
     "name": "Kai Black",
     "position": "Treasurer",
-    "image": "/public/officer_headshots/Kai_Black_Headshot_Photo.jpg",
+    "image": "/officer_headshots/Kai_Black_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/kai-black/",
     "email": "blackkai@oregonstate.edu",
     "description": "Computer Science senior focused on backend, distributed systems, and being bad at the guitar"
@@ -26,7 +26,7 @@
   {
     "name": "Jack Kammerer",
     "position": "Technical Officer",
-    "image": "/public/officer_headshots/Jack_Kammerer_Headshot_Photo.jpg",
+    "image": "/officer_headshots/Jack_Kammerer_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/jack-kammerer/",
     "email": "kammerej@oregonstate.edu",
     "description": "CS junior focused on cybersecurity. I also write code, swim, and climb in my free time"
@@ -34,7 +34,7 @@
   {
     "name": "Chris Ho",
     "position": "Technical Officer",
-    "image": "/public/officer_headshots/Chris_Ho_Headshot_Photo.jpg",
+    "image": "/officer_headshots/Chris_Ho_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/chris-ho-/",
     "email": "hochris@oregonstate.edu",
     "description": "CS major interested in full-stack development, artificial intelligence, and bouldering"
@@ -42,7 +42,7 @@
   {
     "name": "Tan Singsukhum",
     "position": "Public Relations",
-    "image": "/public/officer_headshots/Tan_Singsukhum_Headshot_Photo.jpg",
+    "image": "/officer_headshots/Tan_Singsukhum_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/thanaphon-singsukhum-98b074271/",
     "email": "singsukt@oregonstate.edu",
     "description": "Computer Science junior focused on BIS with a Cybersecurity Management Minor"
@@ -50,7 +50,7 @@
   {
     "name": "Karen Chan",
     "position": "Public Relations - Online",
-    "image": "/public/officer_headshots/Karen_Chan_Headshot_Photo.jpeg",
+    "image": "/officer_headshots/Karen_Chan_Headshot_Photo.jpeg",
     "linkedin": "https://www.linkedin.com/in/karen-c-4133a92ab/",
     "email": "chankare@oregonstate.edu",
     "description": ""
