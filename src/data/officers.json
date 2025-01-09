@@ -29,7 +29,7 @@
     "image": "/public/officer_headshots/Jack_Kammerer_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/jack-kammerer/",
     "email": "kammerej@oregonstate.edu",
-    "description": ""
+    "description": "CS junior focused on cybersecurity. I also write code, swim, and climb in my free time"
   },
   {
     "name": "Chris Ho",
@@ -37,7 +37,7 @@
     "image": "/public/officer_headshots/Chris_Ho_Headshot_Photo.jpg",
     "linkedin": "https://www.linkedin.com/in/chris-ho-/",
     "email": "hochris@oregonstate.edu",
-    "description": ""
+    "description": "CS major interested in full-stack development, artificial intelligence, and bouldering"
   },
   {
     "name": "Tan Singsukhum",
@@ -50,7 +50,7 @@
   {
     "name": "Karen Chan",
     "position": "Public Relations - Online",
-    "image": "/public/officer_headshots/Karen_Chan_Headshot_Photo.jpg",
+    "image": "/public/officer_headshots/Karen_Chan_Headshot_Photo.jpeg",
     "linkedin": "https://www.linkedin.com/in/karen-c-4133a92ab/",
     "email": "chankare@oregonstate.edu",
     "description": ""
