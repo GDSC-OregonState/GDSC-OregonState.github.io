@@ -7,6 +7,7 @@ import type { CollectionEntry } from "astro:content";
 import MainLayout from "./main-layout.astro";
 import Layout from "./Layout.astro";
 
+// Extract post data
 type Props = CollectionEntry<"blog">;
 
 const slug = Astro.props.slug;
@@ -18,8 +19,11 @@ const {
   coverImage,
   category,
   inDev,
-  publishDate
+  publishDate,
 } = Astro.props.data;
+
+// Render the content
+const { Content } = await Astro.props.render();
 ---
 
 <Layout title={title}>
@@ -57,7 +61,36 @@ const {
         <p class="text-lg text-gray-600">{description}</p>
         <hr class="my-8 border-gray-200" />
         <div class="prose-lg prose-gray"></div>
-        {inDev == true ? <div class="tenor-gif-embed" data-postid="18632420" data-share-method="host" data-aspect-ratio="1.25" data-width="100%"><a href="https://tenor.com/view/work-work-in-progress-wip-hurray-design-in-progress-gif-18632420">Work Work In Progress Sticker</a>from <a href="https://tenor.com/search/work-stickers">Work Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script><h1>Check Back {publishDate}</h1> : <slot />}
+
+        {
+          inDev ? (
+            <>
+              <div
+                class="tenor-gif-embed"
+                data-postid="18632420"
+                data-share-method="host"
+                data-aspect-ratio="1.25"
+                data-width="100%"
+              >
+                <a href="https://tenor.com/view/work-work-in-progress-wip-hurray-design-in-progress-gif-18632420">
+                  Work Work In Progress Sticker
+                </a>
+                from{" "}
+                <a href="https://tenor.com/search/work-stickers">
+                  Work Stickers
+                </a>
+              </div>
+              <script
+                type="text/javascript"
+                async
+                src="https://tenor.com/embed.js"
+              />
+              <h1>Check Back {publishDate}</h1>
+            </>
+          ) : (
+            <Content />
+          )
+        }
       </article>
     </div>
   </div>

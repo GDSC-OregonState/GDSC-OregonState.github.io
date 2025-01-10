@@ -163,39 +163,41 @@ import { Button } from "../components/ui/button.tsx";
         Introducing Our Winter Term Challenges
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <div class="flex justify-center items-center m-5">
-            <img
-              src="/Angular.svg"
-              alt="Descriptive text for accessibility"
-              class="h-48 object-contain"
-            />
-          </div>
+        <a href={`/challenge/angular/`}>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="flex justify-center items-center m-5">
+              <img
+                src="/Angular.svg"
+                alt="Descriptive text for accessibility"
+                class="h-48 object-contain"
+              />
+            </div>
 
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Angular Challenge</h3>
-            <p class="text-gray-600 mb-4">
-              Learn the basics of Angular and compete to earn prizes!!!
-            </p>
-            <div class="flex items-center text-sm text-gray-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 mr-2"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-              </svg>
-              <span>Jan 13th</span>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Angular Challenge</h3>
+              <p class="text-gray-600 mb-4">
+                Learn the basics of Angular and compete to earn prizes!!!
+              </p>
+              <div class="flex items-center text-sm text-gray-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Jan 13th</span>
+              </div>
             </div>
           </div>
-        </div>
-
+        </a>
+        <a href={`/challenge/flutter/`}>
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
           <div class="flex justify-center items-center m-5">
             <img
@@ -228,6 +230,8 @@ import { Button } from "../components/ui/button.tsx";
             </div>
           </div>
         </div>
+        </a>
+        <a href={`/challenge/firebase/`}>
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
           <div class="flex justify-center items-center m-5">
             <img
@@ -259,6 +263,7 @@ import { Button } from "../components/ui/button.tsx";
             </div>
           </div>
         </div>
+        </a>
       </div>
     </div>
   </section>
