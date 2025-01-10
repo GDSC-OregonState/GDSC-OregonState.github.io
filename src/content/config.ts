@@ -9,6 +9,7 @@ const blog = defineCollection({
       category: z.string(),
     inDev: z.boolean(),
     // Transform string to Date object
+    publishDate: z.string(),
     pubDate: z
       .string()
       .or(z.date())
@@ -17,6 +18,7 @@ const blog = defineCollection({
       .string()
       .optional()
       .transform((str) => (str ? new Date(str) : undefined)),
+
   }),
 });
 
