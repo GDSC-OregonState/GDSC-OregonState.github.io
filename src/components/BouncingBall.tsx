@@ -30,7 +30,7 @@ const BouncingBall: React.FC<BouncingBallProps> = ({ colors = ['#3498db', '#e74c
     let animationFrameId: number;
 
     // Create 4 bouncing balls with random initial positions, velocities, and colors
-    const balls: Ball[] = colors.map((color) => ({
+    const balls: Ball[] = [...colors, ...colors].map((color) => ({
       x: Math.random() * windowSize.width,
       y: Math.random() * windowSize.height,
       dx: (Math.random() - 0.5) * 1.5, // Random horizontal speed
