@@ -19,14 +19,14 @@ Are you ready to dive into the world of Angular? Whether you're a beginner or br
 
 Your mission, should you choose to accept it, is to:
 
-1. Build a **Hello World** web page using Angular.
-2. Create a **TODO list** app where users can:
+1. Build a simple web page using Angular (this can even be a simple **Hello World page**) **+100 points**.
+2. Create a **TODO list** app where users can **+75 (Additional 75 points)**:
    - Add tasks.
    - Mark tasks as complete.
    - Edit tasks.
    - Delete tasks.
-3. Add **cool animations** to enhance the user experience.
-4. Share your progress to earn points and bragging rights!
+3. Add **cool animations** to enhance the user experience **+25 (Additional 25 points)**.
+4. Don't forget to share with us so we can tally your **points!**
 
 ---
 
@@ -40,3 +40,4 @@ Your mission, should you choose to accept it, is to:
   ```bash
   npm install -g @angular/cli
   ```
+- Follow the [Angular Docs](https://angular.dev/)
