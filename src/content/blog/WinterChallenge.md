@@ -17,10 +17,10 @@ This term we wanted to do something a little different. We understand it is diff
 
 ## Challenge Breakdown 🤖
 
-Each week the challenges are going be structured as follows:
+Each of the 8 weeks this term, the challenges are going be structured as follows:
 
 - A Base challenge worth **100 Points**
-- Then there will be addition challenges worth between **25-100 points**
+- Then there will be additional challenges worth between **25-100 points**
 - You'll then show your project to us or submit our google form
 
 ---
