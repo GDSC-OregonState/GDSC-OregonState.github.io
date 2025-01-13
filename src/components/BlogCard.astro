@@ -10,7 +10,9 @@ const post = Astro.props;
 ---
 
 <article class="group space-y-4">
-  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+  <div
+    class="bg-white rounded-lg shadow-md overflow-hidden w-[400px] h-[350px]"
+  >
     <a href={`/challenge/${post.slug}/`} class="flex h-52">
       <Image
         class="w-full h-full object-contain rounded-xl overflow-hidden"
@@ -40,7 +42,7 @@ const post = Astro.props;
           {post.data.title}
         </h3>
       </a>
-      <p class="text-gray-600 ml-5 mb-10">
+      <p class="text-gray-600 mx-5 mb-10">
         {post.data.description}
       </p>
     </div>
