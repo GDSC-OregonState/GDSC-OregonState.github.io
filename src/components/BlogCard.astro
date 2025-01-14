@@ -13,7 +13,7 @@ const post = Astro.props;
   <div
     class="bg-white rounded-lg shadow-md overflow-hidden w-[400px] h-[350px]"
   >
-    <a href={`/challenge/${post.slug}/`} class="flex h-52">
+    <a href={`/blog/${post.slug}/`} class="flex h-52">
       <Image
         class="w-full h-full object-contain rounded-xl overflow-hidden"
         width={400}
@@ -34,7 +34,7 @@ const post = Astro.props;
     </div>
 
     <div>
-      <a href={`/challenge/${post.slug}/`} class="group-hover:underline">
+      <a href={`/blog/${post.slug}/`} class="group-hover:underline">
         <h3
           class="text-3xl font-bold m-5"
           transition:name={"title-" + post.slug}

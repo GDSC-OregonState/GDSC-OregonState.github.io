@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ChallengesComponent from '../components/ChallengesComponent';
+import Leaderboard from '../components/Leaderboard.tsx';
+import WeekChallenges from "../components/ChallengesComponent";
+import {getLeaderboard} from "../lib/leaderboardFetcher";
+import React from "react";
+import challengesData from "../data/challenges.json";
+
+const initialParticipants = await getLeaderboard()
 ---
 
 <Layout title="Challenges">
@@ -12,7 +18,12 @@ import ChallengesComponent from '../components/ChallengesComponent';
 
   <section class="py-16">
     <div class="container mx-auto px-4">
-      <ChallengesComponent client:load />
+      <Leaderboard client:load participants={initialParticipants}/>
+      <div class="space-y-6">
+        {challengesData.weeks.map((week) => (
+            <WeekChallenges client:load week={week}/>
+        ))}
+      </div>
     </div>
   </section>
 </Layout>

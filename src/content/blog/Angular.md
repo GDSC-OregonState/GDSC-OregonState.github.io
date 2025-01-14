@@ -1,5 +1,5 @@
 ---
-title: "Angular Challenge"
+title: "Week 1: Angular Challenge"
 description: "Build your first app with Angular to earn merch!"
 coverImage: "/Angular.svg"
 category: "Web Development"

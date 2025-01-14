@@ -1,10 +1,9 @@
 {
-  "leaderboard": [
-    { "name": "Anthony Silva", "points": 100 }
-  ],
   "weeks": [
     {
       "weekNumber": 1,
+      "topic": "Angular",
+      "slug": "angular",
       "challenges": [
         {
           "name": "Hello World Angular",
@@ -12,19 +11,14 @@
           "description": "Create a basic Angular frontend that displays 'Hello World' and your name on the screen."
         },
         {
-          "name": "Firebase Auth Setup",
-          "points": 200,
-          "description": "Set up a Firebase backend with FireAuth and populate it with 3 accounts. Create a frontend of your choice that connects to this backend and allows for sign-in."
-        }
-      ]
-    },
-    {
-      "weekNumber": 2,
-      "challenges": [
+          "name": "Animation",
+          "points": 25,
+          "description": "Add an animation to your Angular app"
+        },
         {
-          "name": "API Integration",
-          "points": 180,
-          "description": "Create an application that integrates with a public API and displays data in an organized manner."
+          "name": "Todo List App",
+          "points": 75,
+          "description": "Create a todo list app that allows users to add, edit, complete, and delete tasks."
         }
       ]
     }
