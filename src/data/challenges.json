@@ -13,12 +13,44 @@
         {
           "name": "Animation",
           "points": 25,
-          "description": "Add an animation to your Angular app"
+          "description": "Add an animation to your Angular app."
         },
         {
           "name": "Todo List App",
           "points": 75,
           "description": "Create a todo list app that allows users to add, edit, complete, and delete tasks."
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "topic": "Flutter",
+      "slug": "flutter",
+      "challenges": [
+        {
+          "name": "Setup Challenge",
+          "points": 100,
+          "description": "Download and set up Flutter with Android Studio. Verify the installation by running `flutter doctor`."
+        },
+        {
+          "name": "Hello Flutter App",
+          "points": 100,
+          "description": "Create a simple Flutter app that displays 'Hello, Flutter!' in the center of the screen. Customize the text's style and background color."
+        },
+        {
+          "name": "Button Challenge",
+          "points": 25,
+          "description": "Add a button that updates the text to 'Button Pressed!' when clicked."
+        },
+        {
+          "name": "Navigation Challenge",
+          "points": 50,
+          "description": "Create a second screen and add navigation to it. Display a custom message on the second screen."
+        },
+        {
+          "name": "To-Do App",
+          "points": 100,
+          "description": "Build a to-do app where users can add items to a list. Include a text field for input and a scrollable list to display tasks."
         }
       ]
     }
