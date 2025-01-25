@@ -9,9 +9,13 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind({
-    applyBaseStyles: false,
-  }), mdx()],
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    mdx(),
+  ],
 
-  site: 'https://gdsc-oregonstate.github.io/'
+  site: "https://gdsc-oregonstate.github.io/",
 });

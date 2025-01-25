@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 interface Ball {
   x: number;
@@ -13,9 +13,14 @@ interface BouncingBallProps {
   colors?: string[]; // Array of colors for the balls
 }
 
-const BouncingBall: React.FC<BouncingBallProps> = ({ colors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12'] }) => {
+const BouncingBall: React.FC<BouncingBallProps> = ({
+  colors = ["#3498db", "#e74c3c", "#2ecc71", "#f39c12"],
+}) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [windowSize, setWindowSize] = useState<{ width: number; height: number }>({
+  const [windowSize, setWindowSize] = useState<{
+    width: number;
+    height: number;
+  }>({
     width: window.innerWidth,
     height: window.innerHeight,
   });
@@ -24,7 +29,7 @@ const BouncingBall: React.FC<BouncingBallProps> = ({ colors = ['#3498db', '#e74c
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     let animationFrameId: number;
@@ -66,10 +71,16 @@ const BouncingBall: React.FC<BouncingBallProps> = ({ colors = ['#3498db', '#e74c
         ball.y += ball.dy;
 
         // Ball collision with walls
-        if (ball.x + ball.radius > windowSize.width || ball.x - ball.radius < 0) {
+        if (
+          ball.x + ball.radius > windowSize.width ||
+          ball.x - ball.radius < 0
+        ) {
           ball.dx *= -1;
         }
-        if (ball.y + ball.radius > windowSize.height || ball.y - ball.radius < 0) {
+        if (
+          ball.y + ball.radius > windowSize.height ||
+          ball.y - ball.radius < 0
+        ) {
           ball.dy *= -1;
         }
 
@@ -88,11 +99,11 @@ const BouncingBall: React.FC<BouncingBallProps> = ({ colors = ['#3498db', '#e74c
 
     initialize();
 
-    window.addEventListener('resize', resizeHandler);
+    window.addEventListener("resize", resizeHandler);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      window.removeEventListener('resize', resizeHandler);
+      window.removeEventListener("resize", resizeHandler);
     };
   }, [windowSize, colors]);
 
@@ -100,11 +111,11 @@ const BouncingBall: React.FC<BouncingBallProps> = ({ colors = ['#3498db', '#e74c
     <canvas
       ref={canvasRef}
       style={{
-        position: 'fixed',
+        position: "fixed",
         top: 0,
         left: 0,
         zIndex: -2,
-        pointerEvents: 'none',
+        pointerEvents: "none",
       }}
     />
   );

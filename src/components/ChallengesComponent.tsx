@@ -51,7 +51,9 @@ const WeekChallenges: React.FC<{ week: any }> = ({ week }) => {
         onClick={() => setExpanded(!expanded)}
       >
         <a href={`/blog/${week.slug}/`}>
-            <h3 className="text-xl text-[--google-blue] font-bold underline">Week {week.weekNumber}: {week.topic}</h3>
+          <h3 className="text-xl text-[--google-blue] font-bold underline">
+            Week {week.weekNumber}: {week.topic}
+          </h3>
         </a>
         <svg
           className={`w-6 h-6 transition-transform ${
