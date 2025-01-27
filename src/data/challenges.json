@@ -53,6 +53,33 @@
           "description": "Build a to-do app where users can add items to a list. Include a text field for input and a scrollable list to display tasks."
         }
       ]
+    },
+    {
+      "weekNumber": 3,
+      "topic": "Firebase",
+      "slug": "firebase",
+      "challenges": [
+        {
+          "name": "Firebase Setup",
+          "points": 50,
+          "description": "Set up a Firebase project and integrate Firebase Authentication into a frontend of your choice."
+        },
+        {
+          "name": "Sign In Form",
+          "points": 50,
+          "description": "Create a sign-in/sign-up form that connects to Firebase Authentication. Populate it with at least three accounts."
+        },
+        {
+          "name": "Firestore Setup",
+          "points": 75,
+          "description": "Set up Firebase Firestore and populate it with any data of your choice."
+        },
+        {
+          "name": "Display Data",
+          "points": 75,
+          "description": "Connect your frontend to the Firebase Firestore and display the populated data on your app."
+        }
+      ]
     }
   ]
 }
