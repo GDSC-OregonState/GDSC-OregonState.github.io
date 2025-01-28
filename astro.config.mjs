@@ -17,5 +17,5 @@ export default defineConfig({
     mdx(),
   ],
 
-  site: "https://gdsc-oregonstate.github.io/",
+  site: "https://gdgc-osu.com/",
 });
