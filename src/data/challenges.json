@@ -80,6 +80,38 @@
           "description": "Connect your frontend to the Firebase Firestore and display the populated data on your app."
         }
       ]
+    },
+    {
+      "weekNumber": 4,
+      "topic": "Kotlin",
+      "slug": "kotlin",
+      "challenges": [
+        {
+          "name": "Hello World String Template",
+          "points": 40,
+          "description": "Write a Kotlin program that prints 'Hello, name!' using string templates."
+        },
+        {
+          "name": "When Expression FizzBuzz",
+          "points": 20,
+          "description": "Write a function that prints FizzBuzz for a number using a when expression."
+        },
+        {
+          "name": "Null Safe String Length",
+          "points": 20,
+          "description": "Write a function that returns the length of a string or -1 if the string is null."
+        },
+        {
+          "name": "Extension Function Character Getter",
+          "points": 20,
+          "description": "Write an extension function that returns the 3th character of a string."
+        },
+        {
+          "name": "Multiplatform Project",
+          "points": 100,
+          "description": "Create a multiplatform project that shares code between two platforms."
+        }
+      ]
     }
   ]
 }
