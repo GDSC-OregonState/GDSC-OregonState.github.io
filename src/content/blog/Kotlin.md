@@ -32,7 +32,7 @@ For those who don’t want to set up Android Studio, you can solve these challen
 Create a function that takes a name as a parameter and returns a greeting message using [string templates](https://kotlinlang.org/docs/strings.html#string-templates).
 
 ```kotlin
-fun greetUser(name: String): String {
+fun greetUser(name: String) {
     println("Hello, $name! Welcome to Kotlin!")
 }
 ```
