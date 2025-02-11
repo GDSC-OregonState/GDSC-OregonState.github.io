@@ -112,6 +112,68 @@
           "description": "Create a multiplatform project that shares code between two platforms."
         }
       ]
+    },
+    {
+      "weekNumber": 5,
+      "topic": "Go",
+      "slug": "go",
+      "challenges": [
+        {
+          "name": "Go International",
+          "points": 10,
+          "description": "Create a script that writes 'Go is a cool programming language' in 5 different languages"
+        },
+        {
+          "name": "Go Around, and Around, and Around",
+          "points": 30,
+          "description": "Create a script that returns the 20th Fibonacci number"
+        },
+        {
+          "name": "Go get the internship",
+          "points": 20,
+          "description": "Create a script that returns the 182nd Fibonacci number"
+        },
+        {
+          "name": "Go, go, go, STOP!",
+          "points": 10,
+          "description": "Create a script that will execute a long operation with a Goroutine"
+        },
+        {
+          "name": "Pokémon Go!",
+          "points": 30,
+          "description": "Create a script that can count Pokemon by type"
+        },
+        {
+          "name": "HTTP, GET & GO",
+          "points": 40,
+          "description": "Create a basic HTTP endpoint with Gin"
+        },
+        {
+          "name": "HTTP, GET & GO (Bonus)",
+          "points": 20,
+          "description": "Create a basic HTTP endpoint without Gin"
+        },
+        {
+          "name": "Go Template",
+          "points": 30,
+          "description": "Render a basic HTML script with a custom message based on a string stored on the server, using Go's templating engine."
+        },
+        {
+          "name": "Cryp-Go",
+          "points": 30,
+          "description": "Create an AES-GCM SHA256-HMAC using Encrypt-then-HMAC"
+        },
+        {
+          "name": "Go Sockets",
+          "points": 50,
+          "description": "Create a Go web socket server"
+        },
+        {
+          "name": "Go-currency",
+          "points": 50,
+          "description": "Create a concurrent, file-reading and editing script"
+        }
+      ]
     }
   ]
 }
