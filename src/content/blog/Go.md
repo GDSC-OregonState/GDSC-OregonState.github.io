@@ -13,7 +13,7 @@ publishDate: "February 9th"
 
 Go is a programming language designed to offer the speed of systems languages (C, C++, Rust) with the convenience of modern programming (Java, Python, Javascript, etc., etc.). Go does this by prioritizing speed and optimizations, while still having modern features including garbage collection, complete UTF-8 support, a robust standard library, strong internal data structures, generic inputs, robust internal tooling, and robust tooling. 
 
-![Program Language Speed](/gospeed.png)
+![Program Language Speed](/gospeed.jpg)
 
 The best way to see Go is to use it in action. These are some good resources for using Go:
 
