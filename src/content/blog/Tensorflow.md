@@ -26,14 +26,20 @@ A tensor is a matrix. It contains a set of values that are shaped into a box, wi
 
 Tensor examples:
 
-$\begin{bmatrix} 1 & 2 & 3 & 4 & 5 \end{bmatrix}$
+$$\begin{bmatrix} 1 & 2 & 3 & 4 & 5 \end{bmatrix}$$
 
-$\begin{bmatrix} 1 \\ 2 \\ 3 \\ 4 \\ 5 \end{bmatrix}$
+$$\begin{bmatrix} 
+1 \\\\
+2 \\\\ 
+3 \\\\ 
+4 \\\\ 
+5  
+\end{bmatrix}$$
 
 
-$\begin{bmatrix} 2 & 4 & 6 & 8 & 10 \\ 1 & 3 & 5 & 7 & 9 \end{bmatrix}$
+$$\begin{bmatrix} 2 & 4 & 6 & 8 & 10 \\\\ 1 & 3 & 5 & 7 & 9 \end{bmatrix}$$
 
-$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+$$\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}$$
 
 
 # What is a machine learning model?
@@ -42,11 +48,11 @@ You can imagine a machine learning model as several layers that all perform basi
 
 In a more mathematical notation, one output node can be represented by:
 
-$(\Sigma^{n}_{i=0} w_i * x_i) + b$
+$$(\Sigma^{n}_{i=0} w_i * x_i) + b$$
 
 Or, with matrices, all output nodes can be represented as follows:
 
-$W \cdot \vec{x} + \vec{b}$
+$$W \cdot \vec{x} + \vec{b}$$
 
 In a more visual sense here is a image of what this layer ends up looking like:
 
@@ -91,7 +97,7 @@ Finally, here is a quick disclaimer. Tensorflow's Keras library is responsible f
 
 Using only Tensorflow, write a script that performs the following operations:
 
-- Create a 3 $\times$ 3 matrix that contains random contents in the range of 1 to 9.
+- Create a 3 x 3 matrix that contains random contents in the range of 1 to 9.
     Hint: Your code should resemble the following:
     ```python
         x = tf.random.uniform(???, minval=???, maxval=???)
@@ -106,7 +112,7 @@ Using only Tensorflow, write a script that performs the following operations:
         R = # A times I
         print(R)
     ```
-- Create a 7 $\times$ 5 matrix of all 0's, and use a loop to set all of the elements to be 5. 
+- Create a 7 x 5 matrix of all 0's, and use a loop to set all of the elements to be 5. 
 
     ```python
         A = # Create a 7 by 5 array of all 0's
@@ -212,34 +218,34 @@ Convolutional neural networks are a method of processing image data in a way tha
 
 ## What is a convolution?
 
-A convolution is pretty simple. Here is a basic example of a 5 $\times$ 5 image that contains a 7-like shape:
+A convolution is pretty simple. Here is a basic example of a 5 x 5 image that contains a 7-like shape:
 
-$\begin{bmatrix}1 & 1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 1 & 0 & 0 & 0 & 0\end{bmatrix}$
+$$\begin{bmatrix}1 & 1 & 1 & 1 & 1 \\\\ 0 & 0 & 0 & 1 & 0 \\\\ 0 & 0 & 1 & 0 & 0 \\\\ 0 & 1 & 0 & 0 & 0 \\\\ 1 & 0 & 0 & 0 & 0\end{bmatrix}$$
 
-This is a simple grayscale, small image. Now, a convolution will have a random pattern (initially). To make this demonstration easier, we will only look at one convolution that is 3 $\times$ 3 and only contains 1s:
+This is a simple grayscale, small image. Now, a convolution will have a random pattern (initially). To make this demonstration easier, we will only look at one convolution that is 3 x 3 and only contains 1s:
 
-$\begin{bmatrix}1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix}$
+$$\begin{bmatrix}1 & 1 & 1 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \end{bmatrix}$$
 
 There will also be a bias included with the convolution. We will also just use a bias of 1.
 
 Now, the convolution can be applied by "sliding" our convolution matrix across our image matrix, and performing element-wise multiplication and adding the bias. Applying this matrix results in the following output:
 
 
-$\begin{bmatrix}5 & 6 & 6 \\ 3 & 4 & 3 \\ 4 & 3 & 2\end{bmatrix}$
+$$\begin{bmatrix}5 & 6 & 6 \\\\ 3 & 4 & 3 \\\\ 4 & 3 & 2\end{bmatrix}$$
 
 Note that even with a bad, single convolution, the heaviest values still form the shape of the initial 7.
 
-Additionally, how this really works in a convolutional neural network is that the initial 7 would be duplicated several times (lets say 128), creating a 5 $\times$ 5 $\times$ 128 matrix, that would then be iterated through by a 3 $\times$ 3 $\times$ 128 matrix, where each 3 $\times$ 3 matrix is randomized, and then trained using traditional optimizers.
+Additionally, how this really works in a convolutional neural network is that the initial 7 would be duplicated several times (lets say 128), creating a 5 x 5 x 128 matrix, that would then be iterated through by a 3 x 3 x 128 matrix, where each 3 x 3 matrix is randomized, and then trained using traditional optimizers.
 
 After several convolutions are applied, eventually, the output is flattened into a linear layer, that can be passed into a traditional, fully connected neural network, and classified. 
 
 One final thing to note is that there are other layers needed for a convolutional neural network. The most common are MaxPooling layers, that perform a convolution that takes the maximum of a section of a matrix. A simple example is to use this matrix:
 
-$\begin{bmatrix}1 & 2 & 5 & 6 \\ 3 & 4 & 7 & 8 \\ 9 & 10 & 13 & 14 \\ 11 & 12 & 15 & 16\end{bmatrix}$
+$$\begin{bmatrix}1 & 2 & 5 & 6 \\\\ 3 & 4 & 7 & 8 \\\\ 9 & 10 & 13 & 14 \\\\ 11 & 12 & 15 & 16\end{bmatrix}$$
 
-Now, applying a 2 $\times$ 2 max pooling layer will slide a 2 $\times$ 2 matrix across the matrix and take the maximum of the captured matrix. Additionally, by default, the "slide" amount (called stride) will be equal to the size of the pooling layer. Applying a 2 $\times$ 2 max pooling layer will result in the following:
+Now, applying a 2 x 2 max pooling layer will slide a 2 x 2 matrix across the matrix and take the maximum of the captured matrix. Additionally, by default, the "slide" amount (called stride) will be equal to the size of the pooling layer. Applying a 2 x 2 max pooling layer will result in the following:
 
-$\begin{bmatrix}4 & 8 \\ 12 & 16\end{bmatrix}$
+$$\begin{bmatrix}4 & 8 \\\\ 12 & 16\end{bmatrix}$$
 
 This will ensure the most relevant details are saved, while reducing the computational load.
 
